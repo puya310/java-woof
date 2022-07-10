@@ -20,3 +20,9 @@ jobs:
         continue-on-error: true 
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          
+      - name: upload html results artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: upload html results artifacts
+          path: | results.html
