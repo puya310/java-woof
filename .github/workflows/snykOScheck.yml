@@ -25,4 +25,5 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: upload html results artifacts
+        continue-on-error: true
      
